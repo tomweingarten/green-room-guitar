@@ -1,0 +1,18 @@
+[Unit]
+Description=Guitar Listen Room signaling server
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/var/www/listen-server
+EnvironmentFile=/etc/listen-server.env
+ExecStart=/usr/bin/node listen-server.js
+Restart=on-failure
+RestartSec=2
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

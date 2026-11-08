@@ -1,0 +1,480 @@
+{
+  "id": "blues",
+  "name": "Blues",
+  "description": "The Blues Trainer's coached practice scripts and the Blues Plan: five phases from the 12-bar form to open-mic ready, a jam repertoire and jam etiquette.",
+  "priority": -5,
+  "blues": {
+    "scripts": [
+      {
+        "id": "looper",
+        "name": "Looper Workflow",
+        "description": "The core looper drill. Arm your looper, record a comp chorus against the app click, overdub a bass chorus, then solo over your own loop. Mute the app click once your loop is running. The app's bass and organ stay silent — your loop is the band.",
+        "noBacking": true,
+        "choruses": [
+          {
+            "label": "🔴 Record: comp one chorus",
+            "detail": "Hit REC on beat 1 of bar 1, comp the full form (Texas shuffle or stabs), hit PLAY exactly on the next beat 1. Use quantize, if your looper has it, until your loop points are clean.",
+            "overlay": "chord-tones",
+            "role": "comp"
+          },
+          {
+            "label": "🔴 Overdub: bass line",
+            "detail": "Overdub the boogie bass line through the form. Follow the bass tab below — lock in with your own comping.",
+            "overlay": "bass-line",
+            "role": "bass"
+          },
+          {
+            "label": "🎸 Solo: minor pentatonic",
+            "detail": "Loop is running — turn the app click off or down. One chorus, minor pentatonic only. Milk bends and vibrato.",
+            "overlay": "minor-pent"
+          },
+          {
+            "label": "🎸 Solo: chord tones",
+            "detail": "Target the 3rd of each new chord on its downbeat. This is \"playing the changes.\"",
+            "overlay": "chord-tones"
+          },
+          {
+            "label": "🎸 Solo: BB box",
+            "detail": "Mix major and minor pentatonic — sweet on the I, gritty on the IV and V.",
+            "overlay": "bb-box"
+          }
+        ]
+      },
+      {
+        "id": "scales",
+        "name": "Scale Switcher",
+        "description": "One chorus per scale, cycling. Trains you to hear the flavor each note pool adds over the same changes. The fretboard overlay switches automatically each chorus.",
+        "choruses": [
+          {
+            "label": "Minor pentatonic",
+            "detail": "Home base. Notice which notes rub against the IV and V chords.",
+            "overlay": "minor-pent"
+          },
+          {
+            "label": "Major pentatonic",
+            "detail": "The sweet sound. Great over the I — listen for the country-tinged brightness.",
+            "overlay": "major-pent"
+          },
+          {
+            "label": "BB box (mix both)",
+            "detail": "Major over I, minor over IV and V — or blend with the ♭3→3 bend.",
+            "overlay": "bb-box"
+          },
+          {
+            "label": "Blues scale",
+            "detail": "Minor pentatonic + ♭5. Use the blue note as a passing tone, not a resting place.",
+            "overlay": "blues-scale"
+          },
+          {
+            "label": "Chord tones",
+            "detail": "Arpeggios only: R-3-5-♭7 of the current chord. Land the 3rd on every change.",
+            "overlay": "chord-tones"
+          },
+          {
+            "label": "Mixolydian per chord",
+            "detail": "Full scale rooted on each chord. The final level — switch scales with the changes.",
+            "overlay": "chord-mixolydian"
+          }
+        ]
+      },
+      {
+        "id": "band",
+        "name": "Band Rotation (Open-Mic Sim)",
+        "description": "Rotate roles every chorus like a real jam: comp → solo → solo → bass. The app's band drops out of whichever part is yours, exactly like trading parts with another guitarist at an open mic.",
+        "choruses": [
+          {
+            "label": "🎹 Comp",
+            "detail": "Rhythm role. 9th-chord stabs or Texas shuffle. Stay out of the singer's way — dynamics down.",
+            "overlay": "chord-tones",
+            "role": "comp"
+          },
+          {
+            "label": "🎸 Solo — chorus 1",
+            "detail": "First solo chorus: start simple and low. Leave space — call and response with yourself.",
+            "overlay": "blues-scale",
+            "role": "solo",
+            "callResponse": true
+          },
+          {
+            "label": "🎸 Solo — chorus 2",
+            "detail": "Build: move up the neck, denser phrases, bigger bends. Peak at bar 9 (the V chord).",
+            "overlay": "bb-box",
+            "role": "solo"
+          },
+          {
+            "label": "🎻 Bass line",
+            "detail": "Walking boogie on the low strings. Nail the roots on every change — the band depends on you.",
+            "overlay": "bass-line",
+            "role": "bass"
+          }
+        ]
+      },
+      {
+        "id": "phrasing",
+        "name": "Call & Response Phrasing",
+        "description": "The #1 phrasing drill. Play a 2-bar phrase, rest 2 bars. The grid shows 🎸 on play bars and 🤫 on rest bars. Resting is harder than playing — count through it.",
+        "choruses": [
+          {
+            "label": "Call & response — minor pent",
+            "detail": "Two-bar phrase, two-bar silence. Make each phrase answer the previous one.",
+            "overlay": "minor-pent",
+            "callResponse": true
+          },
+          {
+            "label": "Call & response — BB box",
+            "detail": "Same, sweeter palette. Try: same rhythm, different notes for the answer.",
+            "overlay": "bb-box",
+            "callResponse": true
+          },
+          {
+            "label": "Call & response — chord tones",
+            "detail": "End every phrase on a chord tone of the bar you're in.",
+            "overlay": "chord-tones",
+            "callResponse": true
+          }
+        ]
+      }
+    ],
+    "plan": [
+      {
+        "id": "p1",
+        "name": "Own the Form",
+        "weeks": "Weeks 1–3",
+        "focus": "Never get lost in 12 bars again",
+        "why": "Everything else sits on top of this. At a jam nobody counts bars for you — you must feel where you are in the form (and hear the quick change vs. slow change) even while concentrating on your hands. The looper is the perfect teacher because a sloppy loop point is instant, honest feedback on your timing.",
+        "drills": [
+          {
+            "id": "p1-shuffle-comp",
+            "title": "Shuffle comping at 3 tempos",
+            "goal": "Lock the shuffle feel with the click on 2 & 4 (the \"snare\").",
+            "how": [
+              "Texas shuffle pattern (R+5 / R+6) through the quick-change form.",
+              "One session each at 70, 90, and 110 BPM.",
+              "Call the bar numbers out loud as you play — yes, really."
+            ],
+            "doneWhen": "You can hold a conversation-level thought while comping and still know what bar you're in.",
+            "trainerLink": "/blues?form=quick-change&key=A&bpm=90&click=2and4&overlay=chord-tones&drill=p1-shuffle-comp"
+          },
+          {
+            "id": "p1-loop-point",
+            "title": "Clean 12-bar loop into the looper",
+            "goal": "Record a comp chorus with a seamless loop point.",
+            "how": [
+              "Start the trainer for the count-in and click, quantize ON on the looper if it has one.",
+              "REC on beat 1 of bar 1 → PLAY exactly on the next beat 1.",
+              "Listen through 3 loop cycles: does the seam bump? Re-record until it doesn't.",
+              "Then do it with quantize OFF."
+            ],
+            "doneWhen": "3 out of 4 takes loop seamlessly with quantize OFF.",
+            "trainerLink": "/blues?form=quick-change&key=E&bpm=80&script=looper&drill=p1-loop-point"
+          },
+          {
+            "id": "p1-forms",
+            "title": "Know all the forms",
+            "goal": "Hear the difference between standard, quick-change, 8-bar, and minor blues.",
+            "how": [
+              "One day per form: comp it, then sing the roots over the click.",
+              "The jam-critical skill: recognizing the quick change in bar 2 by ear."
+            ],
+            "doneWhen": "You can name the form from hearing the first 4 bars of any blues recording.",
+            "trainerLink": "/blues?form=standard&key=A&bpm=80&drill=p1-forms"
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "name": "Bass Lines & the Low End",
+        "weeks": "Weeks 3–6",
+        "focus": "Walking/boogie bass through the whole form",
+        "why": "Bass lines are chord-tone training in disguise — R, 3, 5, 6, ♭7 of every chord, in time, with no room to hide. They're also your role at the open mic whenever another guitarist solos: two guitars means one holds the low end. This phase is what makes you a duo instead of two soloists.",
+        "drills": [
+          {
+            "id": "p2-boogie",
+            "title": "Boogie bass on one chord",
+            "goal": "The R-3-5-6-♭7-6-5-3 pattern under your fingers on all three chords.",
+            "how": [
+              "Follow the bass tab in the trainer (bass-line overlay).",
+              "Loop just the I chord first (record one bar into the looper), then IV, then V.",
+              "Swing the 8ths — shuffle feel, palm-muted."
+            ],
+            "doneWhen": "You can play the pattern from any of the three roots without looking at the tab.",
+            "trainerLink": "/blues?form=standard&key=A&bpm=70&overlay=bass-line&drill=p2-boogie"
+          },
+          {
+            "id": "p2-full-form",
+            "title": "Bass line through the full form",
+            "goal": "Unbroken walking bass for 3 choruses, hitting every change on beat 1.",
+            "how": [
+              "Trainer at 70 BPM, bass-line overlay, watch the chord grid.",
+              "The hard part is the switch — the last 2 notes of each bar should lead your hand to the next root.",
+              "Push to 100 BPM over two weeks."
+            ],
+            "doneWhen": "3 clean choruses at 100 BPM with your eyes off the fretboard tab.",
+            "trainerLink": "/blues?form=quick-change&key=E&bpm=70&overlay=bass-line&drill=p2-full-form"
+          },
+          {
+            "id": "p2-loop-swap",
+            "title": "Looper role swap",
+            "goal": "Comp over your recorded bass; bass under your recorded comp.",
+            "how": [
+              "Record a bass-line chorus into the looper, then comp 9th-chord stabs over it.",
+              "Next session, reverse it: record comping, play bass live underneath.",
+              "This is the two-guitar open-mic arrangement, solo practice edition."
+            ],
+            "doneWhen": "Both directions feel comfortable and locked for 5+ minutes straight.",
+            "trainerLink": "/blues?form=quick-change&key=A&bpm=85&script=looper&drill=p2-loop-swap"
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "name": "Play the Changes",
+        "weeks": "Weeks 6–10",
+        "focus": "From one-scale soloing to chord-aware soloing",
+        "why": "This is the single biggest leap past where you are now. Pentatonic-over-everything works, but the moment you land the 3rd of the IV chord on its downbeat, you sound like a different player. The ear upgrade: hearing each chord as its own tonal center instead of one key blanket.",
+        "drills": [
+          {
+            "id": "p3-thirds",
+            "title": "Target the 3rds",
+            "goal": "Land the 3rd of the new chord on beat 1 of every change.",
+            "how": [
+              "Chord-tones overlay; whole notes only at first — one note per bar, but the RIGHT note.",
+              "Then two notes per bar, then free phrasing that still lands the 3rd on changes.",
+              "Key bars: 5 (IV arrives), 9 (V arrives), 11–12 (turnaround)."
+            ],
+            "doneWhen": "You hit the 3rd on 90% of changes without watching the overlay.",
+            "trainerLink": "/blues?form=quick-change&key=A&bpm=70&overlay=chord-tones&drill=p3-thirds"
+          },
+          {
+            "id": "p3-scale-switch",
+            "title": "Scale Switcher script",
+            "goal": "Hear what each scale choice adds over identical changes.",
+            "how": [
+              "Run the Scale Switcher script — the overlay changes every chorus automatically.",
+              "Record a comp loop in your looper first so you solo over real harmony, not just clicks.",
+              "Journal one sentence after: which scale sounded best over which chord?"
+            ],
+            "doneWhen": "You can deliberately switch minor pent → major pent → mixed mid-chorus and hear the color change.",
+            "trainerLink": "/blues?form=quick-change&key=A&bpm=85&script=scales&drill=p3-scale-switch"
+          },
+          {
+            "id": "p3-minor-blues",
+            "title": "Minor blues is its own animal",
+            "goal": "Solo over the minor form (\"The Thrill Is Gone\") with Dorian color.",
+            "how": [
+              "Minor pent works everywhere here, but add the 6 (Dorian) over the i chord.",
+              "The ♭VI7 → V7 turnaround (bars 9–10) wants chord tones — arpeggiate it."
+            ],
+            "doneWhen": "You navigate ♭VI7–V7 with chord tones instead of coasting through it.",
+            "trainerLink": "/blues?form=minor&key=B&bpm=75&overlay=minor-pent&drill=p3-minor-blues"
+          }
+        ]
+      },
+      {
+        "id": "p4",
+        "name": "Vocabulary & Phrasing",
+        "weeks": "Weeks 10–14",
+        "focus": "Sound like blues, not like scales",
+        "why": "Scales are the alphabet; licks and phrasing are the language. Blues is a vocal music — the best solos breathe like a singer. Space, dynamics, bend accuracy, and vibrato consistency separate players faster than note choice. This phase converts your theory into things a bar audience actually feels.",
+        "drills": [
+          {
+            "id": "p4-call-response",
+            "title": "Call & response discipline",
+            "goal": "2-bar phrase, 2-bar rest, every chorus.",
+            "how": [
+              "Run the Call & Response script — the grid shows play/rest bars.",
+              "The rest bars are the drill: count through them, plan the answer phrase.",
+              "Make phrase 2 answer phrase 1: same rhythm/different notes, or same notes/different ending."
+            ],
+            "doneWhen": "Resting feels intentional, not like waiting.",
+            "trainerLink": "/blues?form=standard&key=A&bpm=80&script=phrasing&drill=p4-call-response"
+          },
+          {
+            "id": "p4-bends",
+            "title": "Bend & vibrato accuracy",
+            "goal": "Bends land in tune; vibrato is a choice, not a reflex.",
+            "how": [
+              "Fret the target note first, then bend from a step below and match the pitch by ear.",
+              "The money bends: ♭3→3 (on the I chord), 4→5, and the ♭5 quarter-bend.",
+              "Same lick 3 times: wide-slow vibrato, narrow-fast, none. All three should be deliberate."
+            ],
+            "doneWhen": "A recorded take of your bends sounds in tune to you on playback.",
+            "trainerLink": "/blues?form=standard&key=A&bpm=70&overlay=bb-box&drill=p4-bends"
+          },
+          {
+            "id": "p4-turnarounds",
+            "title": "Turnarounds, intros, endings",
+            "goal": "Three stock turnarounds + the standard intro and ending.",
+            "how": [
+              "Learn the descending-6ths turnaround (bars 11–12) in E and A.",
+              "Intro \"from the five\": start the tune at bar 9 (V–IV–I–V). This is THE jam count-in — the trainer's Intro setting plays it for you.",
+              "Ending: bar 12 walk-up to the ♭9 chord hit... or just the classic unison ending lick."
+            ],
+            "doneWhen": "You can start and end a tune cold, on cue, in E and A.",
+            "trainerLink": "/blues?form=standard&key=E&bpm=80&overlay=chord-tones&intro=five&drill=p4-turnarounds"
+          }
+        ]
+      },
+      {
+        "id": "p5",
+        "name": "Open-Mic Ready",
+        "weeks": "Weeks 14+",
+        "focus": "Repertoire, stamina, and performing",
+        "why": "A jam isn't a practice room. Songs have intros and endings, solos have to build, and you have to keep going when you fumble. The Band Rotation script simulates trading parts with a playing partner; the repertoire below is what actually gets called at blues jams. Rule of thumb: you're ready when you can play a full song start-to-finish three times in a row without stopping.",
+        "drills": [
+          {
+            "id": "p5-band-rotation",
+            "title": "Band Rotation script, full songs",
+            "goal": "Comp → solo → solo → bass, seamlessly, for a full 6-minute \"song\".",
+            "how": [
+              "Run the Band Rotation script and treat each cycle as one song.",
+              "No stopping for mistakes — recover in time, like on stage.",
+              "Do it standing up, guitar at strap height. It genuinely changes your playing."
+            ],
+            "doneWhen": "Three full songs back-to-back, standing, no restarts.",
+            "trainerLink": "/blues?form=quick-change&key=E&bpm=100&script=band&drill=p5-band-rotation"
+          },
+          {
+            "id": "p5-repertoire",
+            "title": "Build the 6-song set",
+            "goal": "Six jam standards you can play in their original keys from memory.",
+            "how": [
+              "Pick from the repertoire table on this page — cover both shuffle and slow blues.",
+              "For each: intro, head/melody or signature riff, 2 solo choruses, ending.",
+              "Record yourself playing each one over a looper; listen back a day later."
+            ],
+            "doneWhen": "All six from memory, including starts and endings."
+          },
+          {
+            "id": "p5-duo",
+            "title": "Duo protocol with a playing partner",
+            "goal": "A shared playbook so rare practice time counts.",
+            "how": [
+              "Agree on 3 songs, keys, and who starts. Write it down, share it.",
+              "Practice the handoff signal (nod, or \"watch me\") for trading solos.",
+              "Between meetups: you each practice both roles with the Band Rotation script, so together-time is only about the handoffs."
+            ],
+            "doneWhen": "One full run-through of your 3-song mini-set together without talking."
+          }
+        ]
+      }
+    ],
+    "repertoire": [
+      {
+        "title": "Pride and Joy",
+        "artist": "Stevie Ray Vaughan",
+        "key": "E",
+        "form": "Quick change",
+        "feel": "Texas shuffle",
+        "bpm": 120,
+        "note": "The open-mic litmus test. Signature top-string rake pattern.",
+        "trainer": {
+          "form": "quick-change",
+          "drums": "shuffle"
+        }
+      },
+      {
+        "title": "Sweet Home Chicago",
+        "artist": "Robert Johnson / Blues Brothers",
+        "key": "E",
+        "form": "Quick change",
+        "feel": "Shuffle",
+        "bpm": 105,
+        "note": "Most-called jam tune on earth. Learn the intro riff.",
+        "trainer": {
+          "form": "quick-change",
+          "drums": "shuffle"
+        }
+      },
+      {
+        "title": "The Thrill Is Gone",
+        "artist": "B.B. King",
+        "key": "Bm",
+        "form": "Minor blues",
+        "feel": "Slow 12/8",
+        "bpm": 85,
+        "note": "THE minor blues. String bends must sing.",
+        "trainer": {
+          "form": "minor",
+          "drums": "twelve8"
+        }
+      },
+      {
+        "title": "Key to the Highway",
+        "artist": "Big Bill Broonzy / Clapton",
+        "key": "A",
+        "form": "8-bar",
+        "feel": "Shuffle",
+        "bpm": 95,
+        "note": "The standard 8-bar call. Turnaround comes fast.",
+        "trainer": {
+          "form": "eight-bar",
+          "drums": "shuffle"
+        }
+      },
+      {
+        "title": "Stormy Monday",
+        "artist": "T-Bone Walker / Allmans",
+        "key": "G",
+        "form": "Jazz blues (Allman changes)",
+        "feel": "Slow",
+        "bpm": 65,
+        "note": "Slow blues showcase. 9th chords everywhere.",
+        "trainer": {
+          "form": "jazz",
+          "drums": "twelve8"
+        }
+      },
+      {
+        "title": "Red House",
+        "artist": "Jimi Hendrix",
+        "key": "B",
+        "form": "Standard 12-bar",
+        "feel": "Slow 12/8",
+        "bpm": 70,
+        "note": "Slow blues in an awkward key — great ear training.",
+        "trainer": {
+          "form": "standard",
+          "drums": "twelve8"
+        }
+      },
+      {
+        "title": "Crossroads",
+        "artist": "Robert Johnson / Cream",
+        "key": "A",
+        "form": "Quick change",
+        "feel": "Driving straight-ish",
+        "bpm": 130,
+        "note": "Uptempo stamina test. Double-stop vocabulary.",
+        "trainer": {
+          "form": "quick-change",
+          "drums": "straight",
+          "feel": "straight"
+        }
+      },
+      {
+        "title": "Before You Accuse Me",
+        "artist": "Bo Diddley / Clapton",
+        "key": "E",
+        "form": "Quick change",
+        "feel": "Shuffle",
+        "bpm": 100,
+        "note": "Easy crowd-pleaser, great first jam tune.",
+        "trainer": {
+          "form": "quick-change",
+          "drums": "shuffle"
+        }
+      }
+    ],
+    "etiquette": [
+      "Know the keys guitarists call: E, A, G, and D cover 90% of blues jams.",
+      "Watch the leader, not your fretboard — endings and stops are signaled visually.",
+      "\"From the five\" means start at bar 9 (V chord). \"Quick change\" means IV in bar 2. Know the lingo.",
+      "Two choruses max per solo unless waved on. Leaving them wanting more beats the opposite.",
+      "When someone else solos, drop your volume by half and simplify. Comping is a supporting role.",
+      "If you get lost, play roots on beat 1 quietly until bar 1 comes around — nobody will notice.",
+      "Tune between songs, never during. Bring a clip-on tuner.",
+      "Talk to the host early, tell them what you play, and if you're a duo. Jams slot duos in easily."
+    ]
+  }
+}

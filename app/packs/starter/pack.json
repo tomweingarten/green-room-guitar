@@ -1,0 +1,201 @@
+{
+  "id": "starter",
+  "name": "Starter pack",
+  "description": "Generic mood presets, a two-sound board and the pack guide. Works with any guitar and any effects; make your own pack to describe your gear.",
+  "priority": -10,
+  "soundboards": [
+    {
+      "id": "basics",
+      "name": "Basics",
+      "sounds": [
+        {
+          "id": "rimshot",
+          "label": "Rimshot",
+          "icon": "🥁",
+          "file": "sounds/rimshot.mp3",
+          "loop": false
+        },
+        {
+          "id": "wilhelm",
+          "label": "Wilhelm Scream",
+          "icon": "🎬",
+          "file": "sounds/wilhelm-scream.mp3",
+          "loop": false
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "rainy-cafe",
+      "name": "Rainy Café",
+      "emoji": "☕",
+      "subtitle": "Lo-fi chords for a slow afternoon",
+      "mood": "Warm, hazy, unhurried",
+      "color": "#b8913f",
+      "keys": [
+        "Dm",
+        "Am"
+      ],
+      "scales": [
+        "dorian",
+        "minor-pentatonic"
+      ],
+      "pickup": "Neck pickup, tone rolled back a little",
+      "effects": [
+        {
+          "name": "Chorus or vibrato",
+          "setting": "Slow and shallow",
+          "details": [
+            "Just enough wobble to sound like old tape"
+          ]
+        },
+        {
+          "name": "Delay",
+          "setting": "Short slapback, one or two repeats"
+        },
+        {
+          "name": "Reverb",
+          "setting": "Small room, low mix"
+        }
+      ],
+      "techniques": [
+        "Seventh and ninth chords played softly",
+        "Lazy swing, a little behind the beat",
+        "Thumb on the bass notes, fingers on top"
+      ],
+      "layers": [
+        "Loop a two-chord vamp: Dm9 to G13",
+        "Add a muted, percussive strum on the off-beats",
+        "Noodle a Dorian melody over the top"
+      ]
+    },
+    {
+      "id": "campfire",
+      "name": "Campfire",
+      "emoji": "🔥",
+      "subtitle": "Open chords for singing along",
+      "mood": "Friendly, bright, loose",
+      "color": "#e2683c",
+      "keys": [
+        "G",
+        "D"
+      ],
+      "scales": [
+        "major-pentatonic",
+        "major"
+      ],
+      "pickup": "Any; acoustic is perfect",
+      "effects": [
+        {
+          "name": "None needed",
+          "setting": "Clean and dry"
+        }
+      ],
+      "techniques": [
+        "Boom-chuck strumming: bass note, then strum",
+        "Hammer-ons inside open chords",
+        "Capo up to suit the singer"
+      ],
+      "layers": [
+        "Loop G, C, D in a steady strum",
+        "Play the major pentatonic melody over it",
+        "Try a walking bass line between chords"
+      ]
+    },
+    {
+      "id": "haunted-hallway",
+      "name": "Haunted Hallway",
+      "emoji": "🕯️",
+      "subtitle": "Spooky textures for game night",
+      "mood": "Tense, eerie, unresolved",
+      "color": "#5a4a8a",
+      "keys": [
+        "Em",
+        "Bm"
+      ],
+      "scales": [
+        "harmonic-minor",
+        "diminished-hw",
+        "phrygian"
+      ],
+      "pickup": "Neck pickup",
+      "effects": [
+        {
+          "name": "Phaser or tremolo",
+          "setting": "Very slow"
+        },
+        {
+          "name": "Delay",
+          "setting": "Long, many repeats, low mix",
+          "details": [
+            "Tape-style delay with some warble works best"
+          ]
+        },
+        {
+          "name": "Reverb",
+          "setting": "Big hall, high mix"
+        }
+      ],
+      "techniques": [
+        "Volume swells: pick with the volume down, then roll it up",
+        "Natural harmonics at frets 5, 7 and 12",
+        "Diminished runs that never resolve"
+      ],
+      "layers": [
+        "Loop a low E drone with a volume swell",
+        "Add harmonics, spaced out",
+        "Answer with slow harmonic-minor phrases"
+      ]
+    },
+    {
+      "id": "sunset-drive",
+      "name": "Sunset Drive",
+      "emoji": "🌅",
+      "subtitle": "Big, open, cinematic",
+      "mood": "Hopeful, wide, glowing",
+      "color": "#5f8f7a",
+      "keys": [
+        "A",
+        "E"
+      ],
+      "scales": [
+        "lydian",
+        "mixolydian",
+        "major-pentatonic"
+      ],
+      "pickup": "Bridge and neck together, or the middle position",
+      "effects": [
+        {
+          "name": "Overdrive",
+          "setting": "Light, just breaking up"
+        },
+        {
+          "name": "Delay",
+          "setting": "Dotted eighth, three or four repeats"
+        },
+        {
+          "name": "Reverb",
+          "setting": "Plate or hall, medium mix"
+        }
+      ],
+      "techniques": [
+        "Ringing open strings against fretted notes",
+        "Lydian's raised fourth for that floating feel",
+        "Let every note sustain"
+      ],
+      "layers": [
+        "Loop A to E in whole notes",
+        "Add a dotted-eighth arpeggio pattern",
+        "Solo with slow bends on top"
+      ]
+    }
+  ],
+  "guides": [
+    {
+      "file": "guides/make-it-yours.md",
+      "title": "Make it yours: packs",
+      "category": "Start here"
+    }
+  ]
+}

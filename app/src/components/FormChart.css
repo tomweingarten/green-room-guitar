@@ -1,0 +1,140 @@
+/* Form chart: four bars to a line, like a lead sheet. */
+.form-chart {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.form-bar {
+  position: relative;
+  min-width: 0;
+  padding: 6px 8px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-card);
+  border: 2px solid var(--color-border);
+  color: var(--color-text-primary);
+  text-align: center;
+  transition: background 80ms ease, border-color 80ms ease, opacity 120ms ease;
+}
+
+.form-bar-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+  min-height: 14px;
+  font-size: 10px;
+  line-height: 14px;
+  color: var(--color-text-muted);
+}
+
+.form-bar-tag {
+  padding: 0 5px;
+  border-radius: var(--radius-full);
+  background: rgba(224, 180, 80, 0.18);
+  color: var(--color-accent-gold);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.form-bar-main {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-lg);
+  line-height: 1.15;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.form-bar-sub {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.form-bar.is-active {
+  background: var(--color-accent-purple);
+  border-color: var(--color-accent-purple);
+  color: #fff;
+}
+
+.form-bar.is-active .form-bar-top,
+.form-bar.is-active .form-bar-sub {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Last beat before a chord change: the bar that's coming lights up. */
+.form-bar.is-upcoming {
+  border-color: var(--color-accent-gold);
+  box-shadow: 0 0 0 1px var(--color-accent-gold), 0 0 16px rgba(224, 180, 80, 0.35);
+}
+
+.form-bar.is-rest {
+  opacity: 0.42;
+}
+
+.form-bar.is-rest.is-active {
+  opacity: 1;
+  background: var(--color-bg-elevated);
+  border-color: var(--color-text-muted);
+}
+
+.form-bar-beats {
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: 4px;
+  display: flex;
+  gap: 3px;
+}
+
+.form-bar-beats span {
+  flex: 1;
+  height: 3px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.form-bar-beats span.on {
+  background: #fff;
+}
+
+/* Large variant for the performance view */
+.form-chart-lg {
+  gap: 8px;
+}
+
+.form-chart-lg .form-bar {
+  padding: 6px 10px 14px;
+}
+
+.form-chart-lg .form-bar-main {
+  font-size: clamp(1.25rem, 2.2vw, 1.9rem);
+}
+
+.form-chart-lg .form-bar-sub {
+  font-size: 12px;
+}
+
+.form-chart-lg .form-bar-beats {
+  bottom: 6px;
+}
+
+.form-chart-lg .form-bar-beats span {
+  height: 5px;
+}
+
+@media (max-width: 480px) {
+  .form-chart {
+    gap: 4px;
+  }
+
+  .form-bar {
+    padding: 4px 4px 10px;
+  }
+
+  .form-bar-main {
+    font-size: var(--text-base);
+  }
+}

@@ -1,0 +1,657 @@
+{
+    "scales": [
+        {
+            "id": "minor-pentatonic",
+            "name": "Minor Pentatonic",
+            "category": "pentatonic",
+            "tier": 0,
+            "formula": "1 b3 4 5 b7",
+            "intervals": [
+                0,
+                3,
+                5,
+                7,
+                10
+            ],
+            "mood": [
+                "bluesy",
+                "rock",
+                "universal"
+            ],
+            "description": "The foundation — 5 essential notes that always work over minor keys.",
+            "progressions": [
+                {
+                    "chords": "Im - IVm - Vm",
+                    "description": "The all-minor i-iv-v. No leading tone, no 2, no 6 — every chord root sits on one of the five pentatonic notes, which is why this progression feels inseparable from the scale."
+                },
+                {
+                    "chords": "Im - bVII - bVI",
+                    "description": "The descending minor rock cadence (Stairway / Dio territory). The roots 1, b7, b6 trace pentatonic-friendly motion, and the b6 chord hints at Aeolian color while staying pentatonic-safe for soloing."
+                }
+            ]
+        },
+        {
+            "id": "major-pentatonic",
+            "name": "Major Pentatonic",
+            "category": "pentatonic",
+            "tier": 0,
+            "formula": "1 2 3 5 6",
+            "intervals": [
+                0,
+                2,
+                4,
+                7,
+                9
+            ],
+            "mood": [
+                "bright",
+                "country",
+                "happy"
+            ],
+            "description": "The major counterpart — bright, uplifting, great for country and pop.",
+            "progressions": [
+                {
+                    "chords": "I - IV - V",
+                    "description": "Primary-color tonality. Major pentatonic deliberately omits the 4 and 7 — the exact notes that would clash over I, IV, V — so every pentatonic lick lands safely across all three chords."
+                },
+                {
+                    "chords": "I - vi - IV - V",
+                    "description": "The 50s doo-wop progression. vi is the relative minor of I and shares four of its five pentatonic notes, so the scale stays musical through the minor detour."
+                }
+            ]
+        },
+        {
+            "id": "natural-minor",
+            "name": "Natural Minor (Aeolian)",
+            "category": "modes",
+            "tier": 1,
+            "formula": "1 2 b3 4 5 b6 b7",
+            "intervals": [
+                0,
+                2,
+                3,
+                5,
+                7,
+                8,
+                10
+            ],
+            "mood": [
+                "dark",
+                "sad",
+                "melancholy"
+            ],
+            "description": "Full minor scale — pentatonic + 2 and b6. Darker, more complete minor sound.",
+            "progressions": [
+                {
+                    "chords": "Im - bVI - bIII - bVII",
+                    "description": "The Andalusian / pop-minor cycle. Moves through all three major chords available in Aeolian (bIII, bVI, bVII), emphasizing the b6 and b7 that distinguish natural minor from pentatonic."
+                },
+                {
+                    "chords": "Im - iv - v",
+                    "description": "All-minor i-iv-v. The v is minor (not V7) because natural minor has no raised 7th — this is the un-resolved, soft cadence that makes Aeolian sound modal rather than classical."
+                }
+            ]
+        },
+        {
+            "id": "dorian",
+            "name": "Dorian",
+            "category": "modes",
+            "tier": 1,
+            "formula": "1 2 b3 4 5 6 b7",
+            "intervals": [
+                0,
+                2,
+                3,
+                5,
+                7,
+                9,
+                10
+            ],
+            "mood": [
+                "groovy",
+                "jazzy",
+                "warm-minor"
+            ],
+            "description": "Minor pentatonic + 2 and 6. THE jam mode — Santana, Allman Bros, funk, and the signature sound of lofi jazz vamps.",
+            "styles": [
+                "lofi-jazz"
+            ],
+            "progressions": [
+                {
+                    "chords": "Im7 - IV7",
+                    "description": "THE Dorian vamp. The major IV is Dorian's calling card — the natural 6 (which is the major 3rd of IV) is the single note that separates Dorian from Aeolian, so this progression puts the defining pitch right in your face."
+                },
+                {
+                    "chords": "Im7 - iim7",
+                    "description": "Both chords are diatonic to Dorian, and crucially ii is minor (not half-diminished as in Aeolian). A tight funk/Santana oscillation where the natural 6 and natural 2 of the mode both show up as chord tones."
+                },
+                {
+                    "chords": "im9 - IV13",
+                    "description": "Extended version of the Dorian vamp. The 9 on i highlights the natural 2, and the 13 on IV highlights the natural 6 — the two notes Dorian adds on top of minor pentatonic."
+                },
+                {
+                    "chords": "im7 - IV7 - bVIImaj7",
+                    "description": "Three fully-diatonic Dorian chords in a row. IV7 and bVIImaj7 both contain the natural 6, and bVIImaj7's major 7 is the b7 of the key — a walk-down that lives entirely inside the mode."
+                }
+            ]
+        },
+        {
+            "id": "mixolydian",
+            "name": "Mixolydian",
+            "category": "modes",
+            "tier": 1,
+            "formula": "1 2 3 4 5 6 b7",
+            "intervals": [
+                0,
+                2,
+                4,
+                5,
+                7,
+                9,
+                10
+            ],
+            "mood": [
+                "bluesy",
+                "dominant",
+                "rock"
+            ],
+            "description": "Major scale with b7. Blues-rock staple, dominant chord territory.",
+            "styles": [
+                "lofi-jazz"
+            ],
+            "progressions": [
+                {
+                    "chords": "I - bVII - IV",
+                    "description": "The classic Mixolydian cadence (Sweet Home Alabama, Sympathy for the Devil). bVII is the mode's defining chord — it contains the b7 that turns a major scale into Mixolydian."
+                },
+                {
+                    "chords": "I7 - IV7",
+                    "description": "Double-dominant blues-rock vamp. I7 literally spells out 1-3-5-b7 of Mixolydian, and IV7's b7 is the 3rd of the key — the scale and the chords share DNA."
+                },
+                {
+                    "chords": "I13 - IV9",
+                    "description": "Funky extensions on the same vamp. I13 stacks 1-3-5-b7-9-13, which is six of the seven Mixolydian notes — you're essentially playing the scale as a chord."
+                },
+                {
+                    "chords": "I7 - bVIImaj7 - IVmaj7",
+                    "description": "Modal walk through the three major-quality chords of Mixolydian. The mode has a unique major IV (unlike Dorian) AND a major bVII (unlike Ionian), and this progression features both."
+                }
+            ]
+        },
+        {
+            "id": "harmonic-minor",
+            "name": "Harmonic Minor",
+            "category": "minor-variants",
+            "tier": 2,
+            "formula": "1 2 b3 4 5 b6 7",
+            "intervals": [
+                0,
+                2,
+                3,
+                5,
+                7,
+                8,
+                11
+            ],
+            "mood": [
+                "dramatic",
+                "exotic",
+                "dark"
+            ],
+            "description": "Aeolian + raised 7th. The dramatic interval between b6 and 7 creates tension.",
+            "progressions": [
+                {
+                    "chords": "Im - V7",
+                    "description": "The reason harmonic minor exists. Natural minor's v is minor and doesn't resolve strongly; raising the 7th turns v into a proper dominant V7, creating the half-step leading-tone pull back to i."
+                },
+                {
+                    "chords": "Im - iv - V7",
+                    "description": "Classical minor cadence. The augmented 2nd between b6 (in iv) and 7 (in V7) is harmonic minor's signature exotic interval — you can hear it in the voice leading from Fm to G7 in A minor."
+                }
+            ]
+        },
+        {
+            "id": "phrygian",
+            "name": "Phrygian",
+            "category": "modes",
+            "tier": 2,
+            "formula": "1 b2 b3 4 5 b6 b7",
+            "intervals": [
+                0,
+                1,
+                3,
+                5,
+                7,
+                8,
+                10
+            ],
+            "mood": [
+                "dark",
+                "exotic",
+                "spanish"
+            ],
+            "description": "The darkest common mode — b2 gives that Spanish/metal flavor.",
+            "progressions": [
+                {
+                    "chords": "Im - bII",
+                    "description": "The signature Phrygian move. The b2 is the mode's defining note — one half-step above the root — and bII is literally a chord built on that note. Two chords, total mode identity."
+                },
+                {
+                    "chords": "Im - bII - bIII - bII",
+                    "description": "Flamenco oscillation. Sits entirely in the lower half of the scale (1, b2, b3) so the b2 half-step tension keeps re-asserting itself instead of dissolving into brighter territory."
+                }
+            ]
+        },
+        {
+            "id": "lydian",
+            "name": "Lydian",
+            "category": "modes",
+            "tier": 2,
+            "formula": "1 2 3 #4 5 6 7",
+            "intervals": [
+                0,
+                2,
+                4,
+                6,
+                7,
+                9,
+                11
+            ],
+            "mood": [
+                "dreamy",
+                "ethereal",
+                "floating"
+            ],
+            "description": "Major with #4. Dreamy, otherworldly — perfect for ambient and ethereal textures.",
+            "styles": [
+                "lofi-jazz"
+            ],
+            "progressions": [
+                {
+                    "chords": "I - II",
+                    "description": "The signature Lydian sound. A major II chord only exists in Lydian — its major 3rd IS the #4 of the key, the exact note that makes this mode Lydian instead of Ionian."
+                },
+                {
+                    "chords": "Imaj7 - II",
+                    "description": "Imaj7 establishes the dreamy, resolved home base; II provides the floating tension without ever fully leaving Lydian. Both chords are fully diatonic and together spell out 6 of the 7 mode notes."
+                },
+                {
+                    "chords": "Imaj7 - II7 - iii7 - Imaj7",
+                    "description": "Note II is II7 (not IImaj7) — in Lydian, II's 7th is the b7-of-the-II-chord which equals the root of the key. iii7 is a diatonic minor-7 landing, and the whole loop lives entirely inside Lydian."
+                }
+            ]
+        },
+        {
+            "id": "melodic-minor",
+            "name": "Melodic Minor",
+            "category": "jazz",
+            "tier": 3,
+            "formula": "1 2 b3 4 5 6 7",
+            "intervals": [
+                0,
+                2,
+                3,
+                5,
+                7,
+                9,
+                11
+            ],
+            "mood": [
+                "sophisticated",
+                "jazzy",
+                "smooth"
+            ],
+            "description": "Jazz workhorse — minor with raised 6th and 7th. Smooth and sophisticated.",
+            "styles": [
+                "lofi-jazz"
+            ],
+            "progressions": [
+                {
+                    "chords": "Im(maj7) - iim7 - V7(alt)",
+                    "description": "Jazz ii-V-i in melodic minor. The m(maj7) tonic is the scale's signature chord (using the raised 7), and V7alt can be voiced directly from the same melodic minor scale a half-step up — one scale covers everything."
+                },
+                {
+                    "chords": "Im - IV7",
+                    "description": "IV is dominant (not minor or major 7) because melodic minor's raised 6 becomes the major-3rd of IV while the b7 of the key is still IV's b7. Bright, unresolved, and impossible to get from Aeolian or Dorian."
+                },
+                {
+                    "chords": "Im(maj7) - vim7b5 - iim7 - V7",
+                    "description": "Jazzy minor turnaround. vim7b5 is genuinely diatonic to melodic minor (A-C-Eb-G in C melodic minor) — unlike natural minor where vi would be major — so this progression showcases melodic minor's unique chord colors."
+                }
+            ]
+        },
+        {
+            "id": "phrygian-dominant",
+            "name": "Phrygian Dominant",
+            "category": "exotic",
+            "tier": 3,
+            "formula": "1 b2 3 4 5 b6 b7",
+            "intervals": [
+                0,
+                1,
+                4,
+                5,
+                7,
+                8,
+                10
+            ],
+            "mood": [
+                "exotic",
+                "dramatic",
+                "middle-eastern"
+            ],
+            "description": "5th mode of harmonic minor. Extremely dramatic — Middle Eastern flavor.",
+            "progressions": [
+                {
+                    "chords": "I - bII",
+                    "description": "Spanish/Middle-Eastern cadence. The major I (with natural 3) paired with bII a half-step above captures the whole mode in two chords — it's why this sounds instantly like flamenco or klezmer."
+                },
+                {
+                    "chords": "I - iv - bII - I",
+                    "description": "The classic flamenco cycle. The major I sits against the minor iv (the mode's b6 in action) and the bII resolves chromatically down to I — the three characteristic moves of Phrygian dominant in one loop."
+                }
+            ]
+        },
+        {
+            "id": "whole-tone",
+            "name": "Whole Tone",
+            "category": "symmetric",
+            "tier": 3,
+            "formula": "1 2 3 #4 #5 b7",
+            "intervals": [
+                0,
+                2,
+                4,
+                6,
+                8,
+                10
+            ],
+            "mood": [
+                "dreamy",
+                "unresolved",
+                "floating"
+            ],
+            "description": "All whole steps — no resolution, pure floating ambiguity.",
+            "progressions": [
+                {
+                    "chords": "I+ - II+",
+                    "description": "Every triad in whole-tone is augmented (because every interval is a whole step). This vamp captures the mode's symmetric, leaning-forward quality — no chord wants to resolve anywhere."
+                },
+                {
+                    "chords": "V7#5 - I",
+                    "description": "Whole tone's most common real-world use. A 7#5 chord is literally 4 notes of the whole-tone scale (1-3-#5-b7), so this is the scale Debussy and jazz players reach for when they see an altered dominant."
+                }
+            ]
+        },
+        {
+            "id": "diminished-hw",
+            "name": "Diminished (H-W)",
+            "category": "symmetric",
+            "tier": 3,
+            "formula": "1 b2 b3 3 #4 5 6 b7",
+            "intervals": [
+                0,
+                1,
+                3,
+                4,
+                6,
+                7,
+                9,
+                10
+            ],
+            "mood": [
+                "tense",
+                "dark",
+                "horror"
+            ],
+            "description": "Alternating half and whole steps. Maximum tension — perfect for horror.",
+            "progressions": [
+                {
+                    "chords": "Idim7 - bIIIdim7",
+                    "description": "Diminished is a symmetrical scale — any dim7 chord repeats every minor 3rd. Idim7 and bIIIdim7 are enharmonically the same four notes, which is why diminished grooves feel suspended and cyclical."
+                },
+                {
+                    "chords": "V7b9 - I",
+                    "description": "The H-W diminished scale contains a full dominant 7b9 chord (1-3-5-b7-b9) on its root. This is the go-to scale for soloing over altered V7b9 chords in jazz."
+                }
+            ]
+        },
+        {
+            "id": "major",
+            "name": "Major (Ionian)",
+            "category": "modes",
+            "tier": 0,
+            "formula": "1 2 3 4 5 6 7",
+            "intervals": [
+                0,
+                2,
+                4,
+                5,
+                7,
+                9,
+                11
+            ],
+            "mood": [
+                "bright",
+                "happy",
+                "resolved"
+            ],
+            "description": "The standard major scale — happy, resolved, the foundation of Western music.",
+            "styles": [
+                "lofi-jazz"
+            ],
+            "progressions": [
+                {
+                    "chords": "I - vi - IV - V",
+                    "description": "The 50s/pop standard. Every chord is diatonic, the roots spell a classic circle-of-fifths-adjacent motion, and the vi adds a touch of relative minor without ever leaving Ionian."
+                },
+                {
+                    "chords": "ii - V - I",
+                    "description": "The most important progression in Western music. Every note is diatonic to major — the V7 contains the leading-tone 7 that resolves to the root of I, which is the central harmonic move of tonal music."
+                },
+                {
+                    "chords": "Imaj7 - vi7 - ii7 - V7",
+                    "description": "The jazz 'I-vi-ii-V' turnaround with extended 7th chords. All four chords are diatonic to major — together they contain every note of the scale, making this a perfect loop to practice Ionian over."
+                },
+                {
+                    "chords": "iii7 - vi7 - ii7 - V7",
+                    "description": "The extended turnaround starting from iii — a jazz walk-down through all the diatonic minor-7 chords of major. Common in rhythm changes bridges; solos over this have 7 whole scale notes to work with at all times."
+                }
+            ]
+        },
+        {
+            "id": "locrian",
+            "name": "Locrian",
+            "category": "modes",
+            "tier": 3,
+            "formula": "1 b2 b3 4 b5 b6 b7",
+            "intervals": [
+                0,
+                1,
+                3,
+                5,
+                6,
+                8,
+                10
+            ],
+            "mood": [
+                "unstable",
+                "dark",
+                "dissonant"
+            ],
+            "description": "The most unstable mode — b5 removes any sense of resolution. Rare but powerful for tension.",
+            "progressions": [
+                {
+                    "chords": "Im7b5 - bVmaj7",
+                    "description": "Locrian's tonic is half-diminished (b5 is the defining note). bVmaj7 is a tritone away from i and captures the mode's unsettled center — there's no stable point of rest, which IS the Locrian sound."
+                },
+                {
+                    "chords": "Im7b5 - bII",
+                    "description": "The only way Locrian 'resolves' is to step away from it. The bII (major) creates a half-step pull that wants to escape the instability of Im7b5 — a rare but effective modal gesture."
+                }
+            ]
+        },
+        {
+            "id": "blues",
+            "name": "Blues Scale",
+            "category": "pentatonic",
+            "tier": 0,
+            "formula": "1 b3 4 b5 5 b7",
+            "intervals": [
+                0,
+                3,
+                5,
+                6,
+                7,
+                10
+            ],
+            "mood": [
+                "bluesy",
+                "gritty",
+                "soulful"
+            ],
+            "description": "Minor pentatonic + the blue note (b5). Essential for blues and rock.",
+            "progressions": [
+                {
+                    "chords": "I7 - IV7 - V7 (12-Bar Blues)",
+                    "description": "The foundational blues progression. All three chords are dominant 7s — which means they all contain a b7 that matches the scale's b7, and the blue note (b5) passes through all of them as a chromatic tension."
+                },
+                {
+                    "chords": "Im7 - IV7",
+                    "description": "Minor blues vamp. The scale's ambiguous b3/3 relationship lets a minor i sit next to a dominant IV without sounding wrong — the b5 'blue note' is the glue that makes both chord qualities feel bluesy."
+                }
+            ]
+        },
+        {
+            "id": "bebop-dominant",
+            "name": "Bebop Dominant",
+            "category": "jazz",
+            "tier": 3,
+            "formula": "1 2 3 4 5 6 b7 7",
+            "intervals": [
+                0,
+                2,
+                4,
+                5,
+                7,
+                9,
+                10,
+                11
+            ],
+            "mood": [
+                "jazzy",
+                "smooth",
+                "classic"
+            ],
+            "description": "Mixolydian + a chromatic passing tone (major 7). Lands chord tones on downbeats — the go-to for walking bebop lines over lofi jazz dominants.",
+            "styles": [
+                "lofi-jazz"
+            ],
+            "progressions": [
+                {
+                    "chords": "I7 - IV7",
+                    "description": "A Mixolydian dominant-7 vamp. Bebop dominant is Mixolydian with an added passing-tone major 7 — all the same chords work, but the extra note gives you an 8-note scale that lands chord tones on every downbeat."
+                },
+                {
+                    "chords": "iim7 - V7 - Imaj7",
+                    "description": "This scale was literally designed for the V7 of a ii-V-I. Starting on V's root, the eighth notes alternate chord tone / non-chord tone — which is why bebop lines sound so effortlessly 'inside' over the V."
+                },
+                {
+                    "chords": "Imaj7 - VI7 - iim7 - V7",
+                    "description": "Rhythm-changes turnaround. Use bebop dominant over both VI7 and V7 — the scale works for any dominant chord, and running it through two of them back-to-back is textbook bebop vocabulary."
+                }
+            ]
+        },
+        {
+            "id": "lydian-dominant",
+            "name": "Lydian Dominant",
+            "category": "jazz",
+            "tier": 3,
+            "formula": "1 2 3 #4 5 6 b7",
+            "intervals": [
+                0,
+                2,
+                4,
+                6,
+                7,
+                9,
+                10
+            ],
+            "mood": [
+                "dreamy",
+                "jazzy",
+                "floating"
+            ],
+            "description": "4th mode of melodic minor — a major scale with #4 and b7. The floaty, slightly unresolved sound under lofi jazz dominant 7#11 chords.",
+            "styles": [
+                "lofi-jazz"
+            ],
+            "progressions": [
+                {
+                    "chords": "I7#11 - bVIImaj7",
+                    "description": "I7#11 IS Lydian Dominant as a chord: 1-3-5-b7-#11 is five of the seven scale notes stacked vertically. bVIImaj7 is diatonic to the mode and lets the sound breathe without resolving."
+                },
+                {
+                    "chords": "I7 - II7",
+                    "description": "II is dominant-7 in Lydian Dominant (not major-7): its major 3rd is the key's #4. Both chords are dominant quality, both contain the b7 of the key — a bright, unresolved, Steely-Dan-flavored vamp."
+                }
+            ]
+        },
+        {
+            "id": "hirajoshi",
+            "name": "Hirajoshi",
+            "category": "pentatonic",
+            "tier": 2,
+            "formula": "1 2 b3 5 b6",
+            "intervals": [
+                0,
+                2,
+                3,
+                7,
+                8
+            ],
+            "mood": [
+                "meditative",
+                "sparse",
+                "japanese"
+            ],
+            "description": "Japanese pentatonic with a dark, spacious quality. Pairs beautifully with tape-echo and reverb — a lofi jazz staple for sparse melodic hooks.",
+            "styles": [
+                "lofi-jazz"
+            ],
+            "progressions": [
+                {
+                    "chords": "Im - bVImaj7",
+                    "description": "The two tonal centers of Hirajoshi. bVImaj7 is fully diatonic — its four notes (b6, 1, b3, 5) are exactly four of the five scale tones — so this vamp is the purest possible harmonic expression of the mode."
+                },
+                {
+                    "chords": "bVImaj7 - Im",
+                    "description": "Same two chords, reversed emphasis. Starting on bVImaj7 lets the scale's b6 anchor the ear, creating the 'floating down onto home' resolution that's characteristic of Japanese modal music."
+                }
+            ]
+        }
+    ],
+    "notes": [
+        "C",
+        "C#",
+        "D",
+        "D#",
+        "E",
+        "F",
+        "F#",
+        "G",
+        "G#",
+        "A",
+        "A#",
+        "B"
+    ],
+    "standardTuning": [
+        "E",
+        "A",
+        "D",
+        "G",
+        "B",
+        "E"
+    ],
+    "fretCount": 22
+}

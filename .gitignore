@@ -1,0 +1,15 @@
+node_modules/
+dist/
+dist-preview/
+test-results/
+.env
+.env.*
+!.env.example
+*.key
+*.crt
+*.pem
+
+# Packs: only the bundled ones are part of the app. Personal packs stay local.
+app/packs/*
+!app/packs/starter/
+!app/packs/blues/

@@ -1,0 +1,44 @@
+.soundboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+.soundboard-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 0.5rem;
+    min-height: 5rem;
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    color: var(--color-text-primary);
+    font-family: var(--font-body);
+    cursor: pointer;
+    transition: background 0.15s, transform 0.05s;
+}
+.soundboard-tile:hover { background: var(--color-bg-input); border-color: var(--ink); }
+.soundboard-tile:active { transform: scale(0.98); }
+.soundboard-tile.is-active { background: rgba(226, 104, 60, 0.12); border-color: var(--vermilion); }
+.soundboard-tile-icon { font-size: 1.5rem; margin-bottom: 0.25rem; }
+.soundboard-tile-label { font-size: 0.85rem; text-align: center; }
+.soundboard-tile-stop { font-size: 0.7rem; opacity: 0.8; margin-top: 0.25rem; }
+/* Easter-egg tile — invisible until hovered. */
+.soundboard-tile.is-hidden {
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+    box-shadow: none;
+    transition: background 0.25s, border-color 0.25s, color 0.25s;
+}
+.soundboard-tile.is-hidden:hover,
+.soundboard-tile.is-hidden:focus-visible {
+    background: var(--color-bg-card);
+    border-color: var(--brass);
+    color: var(--color-accent-amber);
+}
+.soundboard-tile.is-hidden:active {
+    background: rgba(226, 104, 60, 0.12);
+}
